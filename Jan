@@ -1,0 +1,19 @@
+omics pipeline -count n tuxedo miRNA
+
+Tuxedo:
+------
+fastqc - quality check
+tophat - alignment-->bam file output and unmapped bam
+cufflinks - transcript assembly-->(genes,isoforms)->fpkm tracking, transcripts.gtf
+cuffmerge - merge transcripts
+cuffdiff - differential expression-->(cds,genes,isoforms,promoters,splicing)->.diff files
+cummerbund - visualize results
+
+Count:
+-----
+fastqc
+star
+htseq_count - counts
+DESeq2 - Differential expression
+
+G2H
